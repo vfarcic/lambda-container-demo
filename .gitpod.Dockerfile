@@ -1,5 +1,6 @@
 FROM gitpod/workspace-full
 
+ENV INVALIDATE_CACHE=1
 RUN curl -o awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
 RUN unzip awscliv2.zip
 RUN mkdir -p /home/gitpod/aws/bin
